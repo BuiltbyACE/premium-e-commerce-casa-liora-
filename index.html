@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Casa Liora</title>
+<meta name="description" content="Casa Liora crafts premium designer coffee tables from solid wood, Italian marble and tempered glass. Statement pieces for the modern home."/>
+<meta property="og:title" content="Casa Liora  Sculptural Coffee Tables"/>
+<meta property="og:description" content="Premium designer coffee tables crafted for the modern home."/>
+<meta property="og:type" content="website"/>
+<meta property="og:image" content="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=1200&q=80"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="css/styles.css"/>
+<script>
+tailwind.config={theme:{extend:{colors:{ivory:'#F9F6F0',cream:'#F3EDE3',beige:'#E8DDD0',gold:'#B8963E','gold-light':'#D4AF6A',charcoal:'#2C2C2C'},fontFamily:{serif:['Cormorant Garamond','Georgia','serif'],sans:['Jost','system-ui','sans-serif']}}}}
+</script>
+</head>
+<body class="bg-ivory font-sans overflow-x-hidden">
+
+<!-- NAVBAR -->
+<nav id="navbar" class="py-5 px-6 lg:px-12">
+  <div class="max-w-7xl mx-auto flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-3 no-underline" aria-label="Casa Liora">
+      <svg width="26" height="26" viewBox="0 0 28 28" fill="none"><polygon points="14,2 26,24 2,24" fill="none" stroke="#B8963E" stroke-width="1.5"/><polygon points="14,8 21,22 7,22" fill="#B8963E" opacity="0.35"/></svg>
+      <span style="font-family:'Jost',sans-serif;font-size:0.82rem;letter-spacing:0.25em;font-weight:500;color:#1A1A1A;text-transform:uppercase;">Casa Liora</span>
+    </a>
+    <div class="hidden md:flex items-center gap-10">
+      <a href="index.html" class="nav-link active">Home</a>
+      <a href="collection.html" class="nav-link">Collection</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </div>
+    <div class="hidden md:block">
+      <a href="https://wa.me/254743694251?text=Hello%20I'm%20interested%20in%20Casa%20Liora%20coffee%20tables" target="_blank" rel="noopener" class="btn-primary text-xs py-3 px-5">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink:0"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        Order on WhatsApp
+      </a>
+    </div>
+    <button id="menu-btn" class="md:hidden p-2 text-[#1A1A1A]" aria-label="Open menu">
+      <svg width="22" height="16" viewBox="0 0 22 16" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="0" y1="1" x2="22" y2="1"/><line x1="0" y1="8" x2="22" y2="8"/><line x1="0" y1="15" x2="22" y2="15"/></svg>
+    </button>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div id="mobile-menu">
+  <button id="menu-close" class="absolute top-7 right-7 text-[#1A1A1A]" aria-label="Close">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+  <a href="index.html" class="mobile-nav-link">Home</a>
+  <a href="collection.html" class="mobile-nav-link">Collection</a>
+  <a href="about.html" class="mobile-nav-link">About</a>
+  <a href="contact.html" class="mobile-nav-link">Contact</a>
+  <a href="https://wa.me/254743694251?text=Hello%20I'm%20interested%20in%20Casa%20Liora" target="_blank" rel="noopener" class="btn-wa mt-6">Order on WhatsApp</a>
+</div>
+
+<!-- HERO -->
+<section class="hero-section -mt-20" aria-label="Hero">
+  <div class="hero-bg" style="background-image:url('images/hero.jpg');"></div>
+  <div class="hero-content">
+    <div class="max-w-7xl w-full mx-auto px-6 lg:px-12">
+      <div class="max-w-lg reveal">
+        <p class="label-sm mb-5" style="color:#D4AF6A;letter-spacing:0.2em;">New 2026 Collection</p>
+        <h1 class="font-serif text-white leading-none mb-4" style="font-size:clamp(3.5rem,8vw,6.5rem);font-weight:300;">Casa<br/>Liora</h1>
+        <p style="font-family:'Cormorant Garamond',serif;font-size:1.35rem;font-style:italic;color:rgba(255,255,255,0.82);font-weight:300;margin-bottom:2.5rem;line-height:1.4;">Sculptural Coffee Tables for Modern Living</p>
+        <div class="flex flex-wrap gap-4">
+          <a href="collection.html" class="btn-primary">View Collection</a>
+          <a href="https://wa.me/254743694251?text=Hello%20I'm%20interested%20in%20Casa%20Liora" target="_blank" rel="noopener" class="btn-outline-light">Order Now </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-50 pointer-events-none">
+    <span class="label-xs text-white">Scroll</span>
+    <div class="w-px h-10" style="background:rgba(255,255,255,0.5);animation:pulse 2s infinite;"></div>
+  </div>
+</section>
+
+
+<!-- FEATURED COLLECTION -->
+<section class="section-pad bg-ivory" id="featured" aria-label="Featured Collection">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12">
+    <div class="text-center mb-16 reveal">
+      <p class="label-sm text-gold mb-3">Curated Pieces</p>
+      <h2 class="font-serif display-md text-[#1A1A1A] mb-4">Featured Collection</h2>
+      <span class="gold-line mx-auto block"></span>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 stagger-children">
+
+      <!-- Card 1 -->
+      <article class="product-card reveal" data-material="wood">
+        <div class="card-img-wrap">
+          <img src="images/test1.jpg" alt="Liora Wave Coffee Table" loading="lazy" class="w-full" style="aspect-ratio:4/3;object-fit:cover;"/>
+        </div>
+        <div class="p-6">
+          <div class="flex items-start justify-between mb-2">
+            <h3 class="font-serif text-xl text-[#1A1A1A]">Planter Table</h3>
+            <span class="price">KSH 11,000</span>
+          </div>
+          <p class="text-sm text-[#6B6B6B] font-light leading-relaxed mb-5">Handcrafted from recycled tires and natural rope,
+this eco-friendly coffee table features a beautiful
+succulent garden centerpiece with a tempered
+glass top.
+</p>
+          <a href="product.html" class="btn-outline text-xs py-2.5 px-5 w-full text-center" style="display:block;">View Details</a>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="product-card reveal" data-material="marble">
+        <div class="card-img-wrap relative">
+          <span class="badge badge-new absolute top-4 left-4 z-10">New Arrival</span>
+          <img src="images/glass.png" alt="Carrara Marble Top" loading="lazy" class="w-full" style="aspect-ratio:4/3;object-fit:cover;"/>
+        </div>
+        <div class="p-6">
+          <div class="flex items-start justify-between mb-2">
+            <h3 class="font-serif text-xl text-[#1A1A1A]">Nobles Lift Top</h3>
+            <span class="price">KSH 16,999</span>
+          </div>
+          <p class="text-sm text-[#6B6B6B] font-light leading-relaxed mb-5">Designed from a reclaimed tire and carefully wrapped in durable rope, this coffee table showcases a lush plant arrangement at its center. A unique piece that brings greenery and sustainable style into any living space.</p>
+          <a href="product.html" class="btn-outline text-xs py-2.5 px-5 w-full text-center" style="display:block;">View Details</a>
+        </div>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="product-card reveal" data-material="glass">
+        <div class="card-img-wrap">
+          <img src="images/test3.jpg" alt="Glass Horizon Table" loading="lazy" class="w-full" style="aspect-ratio:4/3;object-fit:cover;"/>
+        </div>
+        <div class="p-6">
+          <div class="flex items-start justify-between mb-2">
+            <h3 class="font-serif text-xl text-[#1A1A1A]">Glass Horizon</h3>
+            <span class="price">KSH 8,000 </span>
+          </div>
+          <p class="text-sm text-[#6B6B6B] font-light leading-relaxed mb-5">A modern eco-conscious design crafted from recycled tires and natural fibers. The built-in plant display adds a refreshing touch of nature while maintaining a functional and stylish coffee table surface.</p>
+          <a href="product.html" class="btn-outline text-xs py-2.5 px-5 w-full text-center" style="display:block;">View Details</a>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="text-center mt-14 reveal">
+      <a href="collection.html" class="btn-outline">Explore Full Collection</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- CRAFTSMANSHIP -->
+<section class="section-pad bg-cream" aria-label="Craftsmanship">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+
+      <!-- Left: text -->
+      <div class="reveal-left">
+        <p class="label-sm text-gold mb-4">The Making</p>
+        <h2 class="font-serif display-md text-[#1A1A1A] mb-2">Exquisite<br/>Craftsmanship</h2>
+        <span class="gold-line block mb-8"></span>
+        <p class="text-[#6B6B6B] font-light leading-relaxed mb-10 max-w-md" style="font-size:0.95rem;">Every Casa Liora piece is testament to quality materials and obsessive craft. Our Nairobi artisans work with time-honoured techniques to create furniture that lasts generations.</p>
+
+        <div class="grid grid-cols-2 gap-6">
+          <div class="flex items-start gap-4">
+            <div class="craft-icon-wrap flex-shrink-0">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#B8963E" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+            </div>
+            <div>
+              <h4 class="font-serif text-base text-[#1A1A1A] mb-1">Recycled Tire Base</h4>
+              <p class="text-xs text-[#6B6B6B] font-light leading-relaxed">Carefully cleaned and reinforced reclaimed tires form the durable foundation of every table.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="craft-icon-wrap flex-shrink-0">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#B8963E" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            </div>
+            <div>
+              <h4 class="font-serif text-base text-[#1A1A1A] mb-1">Natural Rope Wrap
+</h4>
+              <p class="text-xs text-[#6B6B6B] font-light leading-relaxed">Strong hand-wrapped jute rope creates the signature texture and organic aesthetic.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="craft-icon-wrap flex-shrink-0">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#B8963E" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            </div>
+            <div>
+              <h4 class="font-serif text-base text-[#1A1A1A] mb-1">Tempered Glass</h4>
+              <p class="text-xs text-[#6B6B6B] font-light leading-relaxed">Durable tempered glass tops provide a sleek surface while showcasing the design beneath.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="craft-icon-wrap flex-shrink-0">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#B8963E" stroke-width="1.5"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+            </div>
+            <div>
+              <h4 class="font-serif text-base text-[#1A1A1A] mb-1">Handcrafted Finished</h4>
+              <p class="text-xs text-[#6B6B6B] font-light leading-relaxed">Every table is assembled, wrapped, and inspected by hand to ensure quality and uniqueness.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: image -->
+      <div class="reveal-right">
+        <div style="position:relative;">
+          <img src="images/test7.jpg" alt="Craftsmanship detail" loading="lazy" class="w-full" style="aspect-ratio:4/5;object-fit:cover;"/>
+          <div style="position:absolute;bottom:-1.5rem;left:-1.5rem;width:180px;height:180px;background:var(--cream);z-index:-1;"></div>
+          <div style="position:absolute;top:-1.5rem;right:-1.5rem;width:100px;height:100px;border:1px solid var(--gold);z-index:-1;"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- LIFESTYLE GALLERY -->
+<section class="section-pad bg-ivory" aria-label="Gallery">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12">
+    <div class="text-center mb-16 reveal">
+      <p class="label-sm text-gold mb-3">In the Home</p>
+      <h2 class="font-serif display-md text-[#1A1A1A]">Curated Living</h2>
+    </div>
+
+    <div class="gallery-grid reveal">
+      <div class="g-span-8" style="height:480px;">
+        <img src="https://i.pinimg.com/736x/7e/35/58/7e3558091350bc574dcaf411682c4ece.jpg" alt="Luxury living room" loading="lazy" class="gallery-img" style="height:100%;"/>
+      </div>
+      <div class="g-span-4 flex flex-col gap-3" style="height:480px;">
+        <img src="images/seal-recycled-tire-speaker-1.jpg" alt="Interior detail" loading="lazy" class="gallery-img flex-1" style="object-fit:cover;min-height:0;"/>
+        <img src="images/seats.jpg" alt="Elegant table styling" loading="lazy" class="gallery-img flex-1" style="object-fit:cover;min-height:0;"/>
+      </div>
+      <div class="g-span-4" style="height:360px;margin-top:0.75rem;">
+        <img src="https://i.pinimg.com/1200x/62/25/b7/6225b77a7acb44f0d7b177f417c45d48.jpg" alt="Minimalist space" loading="lazy" class="gallery-img" style="height:100%;"/>
+      </div>
+      <div class="g-span-4" style="height:360px;margin-top:0.75rem;">
+        <img src="https://i.pinimg.com/1200x/c5/45/e1/c545e1b4da4889580935bca5e3c5c4bf.jpg" alt="Modern interior" loading="lazy" class="gallery-img" style="height:100%;"/>
+      </div>
+      <div class="g-span-4" style="height:360px;margin-top:0.75rem;">
+        <div style="height:100%;background:var(--beige);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:1rem;">
+          <span class="label-sm text-gold">New Arrivals</span>
+          <a href="collection.html" class="btn-primary text-xs">Shop Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- TESTIMONIALS -->
+<section class="section-pad" style="background:var(--black);" aria-label="Testimonials">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12">
+    <div class="text-center mb-16 reveal">
+      <p class="label-sm mb-3" style="color:var(--gold);">What They Say</p>
+      <h2 class="font-serif display-md" style="color:white;">Voices of Our Clients</h2>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 stagger-children">
+
+ <div class="testimonial-card reveal">
+  <p class="text-[#6B6B6B] font-light text-sm leading-relaxed mt-6 mb-6">
+    "The craftsmanship is incredible. The rope wrapping is beautifully done, and the plant centerpiece adds such a refreshing natural touch to my home."
+  </p>
+  <hr class="thin-divider mb-4"/>
+  <div class="flex items-center gap-3">
+    <!-- Profile Image -->
+    <img 
+      src="images/person1.jpg" 
+      alt="Anika Patel" 
+      class="w-10 h-10 rounded-full object-cover flex-shrink-0 bg-var(--beige)"
+    />
+    <div>
+      <p class="font-serif text-sm text-[#1A1A1A]">David Mwangi</p>
+      <p class="label-xs text-[#A8A8A8]">Interior Designer, Nairobi</p>
+    </div>
+  </div>
+</div>
+<div class="testimonial-card reveal">
+  <p class="text-[#6B6B6B] font-light text-sm leading-relaxed mt-6 mb-6">
+  "A brilliant example of turning recycled materials into functional art."
+  </p>
+  <hr class="thin-divider mb-4"/>
+  <div class="flex items-center gap-3">
+    <!-- Profile Image -->
+    <img 
+      src="/images/person2.jpg" 
+      alt="Anika Patel" 
+      class="w-10 h-10 rounded-full object-cover flex-shrink-0 bg-var(--beige)"
+    />
+    <div>
+      <p class="font-serif text-sm text-[#1A1A1A]">James Omondi</p>
+      <p class="label-xs text-[#A8A8A8]">Architect, Kiambu</p>
+    </div>
+  </div>
+</div>
+<div class="testimonial-card reveal">
+  <p class="text-[#6B6B6B] font-light text-sm leading-relaxed mt-6 mb-6">
+   "Everyone who visits my house asks about this table. It’s unique, sustainable, and beautifully handcrafted."
+  </p>
+  <hr class="thin-divider mb-4"/>
+  <div class="flex items-center gap-3">
+    <!-- Profile Image -->
+    <img 
+      src="/images/person3.jpg" 
+      alt="Anika Patel" 
+      class="w-10 h-10 rounded-full object-cover flex-shrink-0 bg-var(--beige)"
+    />
+    <div>
+      <p class="font-serif text-sm text-[#1A1A1A]">Grace Wanjiku</p>
+      <p class="label-xs text-[#A8A8A8]">Homeowner, Karen</p>
+    </div>
+  </div>
+</div>
+
+</section>
+
+
+<!-- NEWSLETTER -->
+<section class="section-pad-sm" style="background:var(--charcoal);" aria-label="Newsletter">
+  <div class="max-w-2xl mx-auto px-6 text-center reveal">
+    <p class="label-sm mb-4" style="color:var(--gold);">Stay Inspired</p>
+    <h2 class="font-serif text-3xl mb-3" style="color:white;">Join Our Circle</h2>
+    <p class="text-sm font-light mb-10" style="color:rgba(255,255,255,0.5);">Early access to new collections, design stories, and exclusive offers.</p>
+    <form class="newsletter-form flex flex-col sm:flex-row gap-0 max-w-md mx-auto" novalidate>
+      <input type="email" placeholder="Your email address" required class="newsletter-input sm:flex-1" style="border-right:none;"/>
+      <button type="submit" class="btn-primary text-xs px-6" style="white-space:nowrap;">Subscribe</button>
+    </form>
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="py-16 px-6 lg:px-12">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-14">
+
+      <!-- Brand -->
+      <div>
+        <div class="flex items-center gap-3 mb-5">
+          <svg width="22" height="22" viewBox="0 0 28 28" fill="none"><polygon points="14,2 26,24 2,24" fill="none" stroke="#B8963E" stroke-width="1.5"/><polygon points="14,8 21,22 7,22" fill="#B8963E" opacity="0.35"/></svg>
+          <span style="font-family:'Jost',sans-serif;font-size:0.78rem;letter-spacing:0.22em;font-weight:500;color:#fff;text-transform:uppercase;">Casa Liora</span>
+        </div>
+        <p class="text-sm font-light leading-relaxed mb-6" style="color:rgba(255,255,255,0.45);max-width:200px;">Redefining modern living through timeless design and artisanal craftsmanship.</p>
+        <div class="flex gap-3">
+          <a href="#" class="footer-social-link" aria-label="Instagram">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://wa.me/254743694251" target="_blank" rel="noopener" class="footer-social-link" aria-label="WhatsApp">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          </a>
+          <a href="#" class="footer-social-link" aria-label="Pinterest">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Collection Links -->
+      <div>
+        <h5 class="label-sm mb-5" style="color:rgba(255,255,255,0.6);">Collection</h5>
+        <ul class="space-y-3">
+          <li><a href="collection.html">New Arrivals</a></li>
+          <li><a href="collection.html">Closed Tops</a></li>
+          <li><a href="collection.html">Jute Rope</a></li>
+          <li><a href="collection.html">Tempered Glass</a></li>
+          <li><a href="contact.html">Customize your Orders</a></li>
+        </ul>
+      </div>
+
+      <!-- Support -->
+      <div>
+        <h5 class="label-sm mb-5" style="color:rgba(255,255,255,0.6);">Support</h5>
+        <ul class="space-y-3">
+          <li><a href="contact.html">Shipping &amp; Returns</a></li>
+          <li><a href="contact.html">Care Guide</a></li>
+          <li><a href="contact.html">FAQ</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Newsletter mini -->
+      <div>
+        <h5 class="label-sm mb-5" style="color:rgba(255,255,255,0.6);">Newsletter</h5>
+        <p class="text-xs font-light mb-5" style="color:rgba(255,255,255,0.4);">Join our mailing list for early access and design inspiration.</p>
+        <form class="newsletter-form flex" novalidate>
+          <input type="email" placeholder="Your email" required class="newsletter-input" style="font-size:0.8rem;"/>
+          <button type="submit" class="btn-primary px-4" style="white-space:nowrap;padding-left:1rem;padding-right:1rem;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <hr style="border:none;height:1px;background:rgba(255,255,255,0.08);margin-bottom:2rem;"/>
+    <div class="flex flex-col sm:flex-row justify-between items-center gap-4">
+      <p class="text-xs" style="color:rgba(255,255,255,0.3);">© 2026 Casa Liora. All rights reserved.</p>
+      <div class="flex gap-6">
+        <a href="#" class="text-xs" style="color:rgba(255,255,255,0.3);">Privacy Policy</a>
+        <a href="#" class="text-xs" style="color:rgba(255,255,255,0.3);">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- BACK TO TOP -->
+<button id="back-to-top" aria-label="Back to top">
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+</button>
+
+<script src="js/main.js"></script>
+</body>
+</html>
